@@ -5,8 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="banner">
+        <img src="imgs/garvit-nama-Vd_l9-f7DAQ-unsplash.jpg" class="image">
+        <img src="imgs/odin-lined.png" class="logo">
+        <p class="credits">Photo by <a href="https://unsplash.com/@garvitnama">Garvit Nama</a>, <a href="https://unsplash.com">Unsplash</a></p>
+    </div>
+
+    <div class="main">
+        <p>In my restless dreams, I see that curriculum. <em>The Odin Project</em>.
+        You promised me you'd learn this lessons and become Web-Developer.
+        But you never did.</p>
+        <p>So, I'm alone here now, waiting for you to sign up.<br>
+        And don't worry, all of that isn't real.</p>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Create New Account</legend>
+
+                <p>First name</p>
+                <input name="firstName" id="firstName" placeholder="John">
+                
+                <p>Last name</p>
+                <input name="lastName" id="lastName" placeholder="Doe">
+
+                <p>E-mail</p>
+                <input name="email" id="email" placeholder="johndoe@mail.com" type="email">
+                
+                <p>Phone number</p>
+                <input name="phoneNumber" id="phoneNumber" placeholder="+1 234-567-8900" type="tel">
+
+                <p>Password</p>
+                <input name="password" id="password" type="password">
+                
+                <p>Confirm password</p>
+                <input name="password" id="password" type="password">
+            </fieldset>
+        </form>
+
+        <button type="submit">Create account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
 </body>
 </html>
