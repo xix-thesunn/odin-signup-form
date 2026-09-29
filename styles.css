@@ -1,5 +1,30 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
+    margin: 0; 
 }
 
+.banner {
+    height: 100vh;
+    width: clamp(300px, 40vw, 550px);
+    background-image: url(imgs/garvit-nama-Vd_l9-f7DAQ-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+}
+
+.main {
+    flex-shrink: 1;
+}
