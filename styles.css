@@ -52,6 +52,17 @@ fieldset {
     border: none;
 }
 
+.form-body {
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+    grid-row-gap: 15px;
+}
+
+label {
+    
+}
+
 label, input {
+    display: block;
     font-family: 'Dm Sans', Arial, Helvetica, sans-serif;
 }
