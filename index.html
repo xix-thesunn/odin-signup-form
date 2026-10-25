@@ -22,38 +22,45 @@
         But you never did.</p>
         <p>So, I'm alone here now, waiting for you to sign up.<br>
         And don't worry, all of that isn't real.</p>
+        
+        <div class="form-box">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Create New Account</legend>
+                    <div class="form-body">
+                        <div class="form-inputs">
+                            <label>First name</label>
+                            <input name="firstName" id="firstName" placeholder="John">
+                        </div>
+                        <div class="form-inputs">
+                            <label>Last name</label>
+                            <input name="lastName" id="lastName" placeholder="Doe">
+                        </div>
+                        <div class="form-inputs">
+                            <label>E-mail</label>
+                            <input name="email" id="email" placeholder="johndoe@mail.com" type="email">
+                        </div>
+                        <div class="form-inputs">
+                            <label>Phone number</label>
+                            <input name="phoneNumber" id="phoneNumber" placeholder="+1 234-567-8900" type="tel">
+                        </div>
+                        <div class="form-inputs">
+                            <label>Password</label>
+                            <input name="password" id="password" type="password">
+                        </div>
+                        <div class="form-inputs">
+                            <label>Confirm password</label>
+                            <input name="password" id="password" type="password">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
-        <form action="" method="post">
-            <fieldset>
-                <legend>Create New Account</legend>
-                <div class="form-inputs">
-                    <label>First name</label>
-                    <input name="firstName" id="firstName" placeholder="John">
-
-                    <label>Last name</label>
-                    <input name="lastName" id="lastName" placeholder="Doe">
-                </div>
-
-                <div class="form-inputs">
-                    <label>E-mail</label>
-                    <input name="email" id="email" placeholder="johndoe@mail.com" type="email">
-                    
-                    <label>Phone number</label>
-                    <input name="phoneNumber" id="phoneNumber" placeholder="+1 234-567-8900" type="tel">
-                </div>
-
-                <div class="form-inputs">
-                    <label>Password</label>
-                    <input name="password" id="password" type="password">
-                    
-                    <label>Confirm password</label>
-                    <input name="password" id="password" type="password">
-                <div class="form-inputs">
-            </fieldset>
-        </form>
-
-        <button type="submit">Create account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="login">
+            <button type="submit">Create account</button>
+            <div>Already have an account? <a href="#">Log in</a></div>
+        </div>
     </div>
 </body>
 </html>

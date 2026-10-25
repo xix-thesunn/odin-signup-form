@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Dm Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 body {
     display: flex;
     align-items: center;
     margin: 0; 
-    font-family: 'DM Serif Text', Georgia, 'Times New Roman', Times, serif;
     background: #F1F2EF;
 }
 
@@ -30,6 +31,8 @@ body {
 }
 
 .credits {
+    font-family: 'Dm Sans', Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
     color: white;
     width: 300px;
     text-align: center;
@@ -45,24 +48,83 @@ body {
 
 .main p {
     margin: 30px 80px;
+    font-family: 'DM Serif Text', Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-box {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+form {
+    margin: auto 80px;
 }
 
 fieldset {
-    background: white;
+    padding: 40px 0;
+    margin: 0;
     border: none;
+}
+
+legend {
+    font-family: 'DM Serif Text', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    padding: 25px 0 0 0;
 }
 
 .form-body {
     display: grid;
     grid: auto-flow / 1fr 1fr;
     grid-row-gap: 15px;
+    max-width: 500px;
 }
 
 label {
-    
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 1.4px;
+    margin: 0 0 3px 0;
+
 }
 
 label, input {
     display: block;
     font-family: 'Dm Sans', Arial, Helvetica, sans-serif;
+}
+
+input {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+}
+
+.login * {
+    display: inline;
+}
+
+.login {
+    margin: 40px 80px;
+}
+
+.login button {
+    background-color: #1d2c19;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-family: 'Dm Sans', Arial, Helvetica, sans-serif;
+}
+
+.login button:hover {
+    background-color: hsl(107, 28%, 24%);
+}
+
+.login div {
+    margin: 0 10px;
+}
+
+.login div a {
+    color: #1d2c19;
 }
