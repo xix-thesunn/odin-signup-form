@@ -74,9 +74,9 @@ legend {
 
 .form-body {
     display: grid;
-    grid: auto-flow / 1fr 1fr;
+    grid: auto-flow / max-content max-content;
     grid-row-gap: 15px;
-    max-width: 500px;
+    grid-column-gap: 30px;
 }
 
 label {
@@ -84,7 +84,11 @@ label {
     font-size: 0.6rem;
     letter-spacing: 1.4px;
     margin: 0 0 3px 0;
+}
 
+.hint {
+    font-size: 0.6rem;
+    margin: 5px 0;
 }
 
 label, input {
@@ -97,7 +101,23 @@ input {
     padding: 6px 15px;
     border-radius: 10px;
     border: 1px solid #a1a1a1;
+    width: clamp(100px, 15vw, 200px);
 }
+
+input:focus {
+    outline: none;
+    border: 1px solid #a1a1a1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+input:user-invalid {
+    border-color: #ce0101;
+}
+
+#password:user-valid, #email:user-valid {
+    border-color: #374c2f;
+}
+
 
 .login * {
     display: inline;

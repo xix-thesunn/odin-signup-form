@@ -37,20 +37,21 @@
                             <input name="lastName" id="lastName" placeholder="Doe">
                         </div>
                         <div class="form-inputs">
-                            <label>E-mail</label>
-                            <input name="email" id="email" placeholder="johndoe@mail.com" type="email">
+                            <label>E-mail*</label>
+                            <input name="email" id="email" placeholder="johndoe@mail.com" type="email" required>
                         </div>
                         <div class="form-inputs">
                             <label>Phone number</label>
                             <input name="phoneNumber" id="phoneNumber" placeholder="+1 234-567-8900" type="tel">
                         </div>
                         <div class="form-inputs">
-                            <label>Password</label>
-                            <input name="password" id="password" type="password">
+                            <label>Password*</label>
+                            <input name="password" id="password" type="password" required minlength="8">
+                            <div class="hint">Use at least 8 characters.</div>
                         </div>
                         <div class="form-inputs">
-                            <label>Confirm password</label>
-                            <input name="password" id="password" type="password">
+                            <label>Confirm password*</label>
+                            <input name="password" id="password" type="password" required minlength="8">
                         </div>
                     </div>
                 </fieldset>
