@@ -20,6 +20,7 @@ body {
     background-size: cover;
     flex-shrink: 0;
     position: relative;
+    flex-grow: 1;
 }
 
 .logo {
@@ -44,6 +45,10 @@ body {
 
 .credits a {
     color: white;
+}
+
+.main {
+    flex-grow: 4;
 }
 
 .main p {
